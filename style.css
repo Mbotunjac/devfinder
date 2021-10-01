@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*Colors*/
+    --white: #fefefe;
+    --light-blue: #f6f8ff;
+    --blue: #0079ff;
+    --grey-blue: #4b6a9a;
+    --grey: #697C9A;
+    --dark-grey: #2B3442;
+    /*dark mode colors*/
+    --darko-mode-white: #FFFFFF;
+    --dark-mode-blue: #0079FF;
+    --dark-mode-black: #F6F8FF;
+    --dark-mode-grey: #1E2AA7;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    background-color: var(--light-blue);
+}
