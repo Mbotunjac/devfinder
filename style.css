@@ -13,6 +13,8 @@
     --blue: #0079ff;
     --grey: #697C9A;
     --dark-grey: #2B3442;
+    --error: #F74646;
+
 
     /*dark mode colors */
     --dm-grey: #1E2AA7;
@@ -155,33 +157,38 @@ body {
     transform: scale(0.975);
 } 
 
+.error{
+    position: absolute;
+    left: 498px;
+    
+}
+
+#no-results{
+    position: relative;
+    color: var(--error);
+    font-weight: bold;
+}
+
 .content {
+
     background-color: var(--lm-bg-content);
     border-radius: 15px;
     margin-top: 26px;
     box-shadow: var(--lm-shadow-inactive);
-}
-
-.profile {
-    width: 280px;
-    height: 481px;
-    min-height: 517px;
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+.profile {
+    position:relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .avatar{
     width: 70px;
     height: 70px;
     border-radius: 90px;
-}
-
-.name{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .prf-name {
@@ -220,41 +227,40 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 85px;
-    font-size: 11px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
 }
 
-.social-value{
+.social-value {
     font-size: 16px;
     font-weight: bold;
     color: var(--lm-text-alt);
 }
 
-/*
-.profile-bottom-wrapper{
-    height: 127px;
+.media-card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-flow: column wrap;
     justify-content: space-between;
+    max-height: 65px;
 }
-.profile-info{
+
+.locations {
     display: flex;
 }
-.bottom-icons{
-    width:20px;
+
+.links {
+    max-width: 20px;
     filter: var(--lm-icon-bg);
 }
-.profile-info p{
+
+.locations p {
     margin-left: 14px;
 }
-.error{
-    position: absolute;
-}
-#no-results{
-    position: relative;
-    color: red;
-    font-weight: bold;
-    left: 150px;
-}
+
 .dm-text{
     color: var(--dm-text);
 }
@@ -267,6 +273,9 @@ body {
 .active{
     box-shadow: var(--lm-shadow-active);
 }
+
+
+/*
 @media screen and (min-width:768px) {
     body{
         font-size: 15px;
@@ -351,21 +360,12 @@ body {
         min-height: 400px;
         max-height: 400px;
     }
-    .profile-header{
-        position:relative;
-        right: 155px;
-        max-height: 40px;
-        min-width: 625px;
-    }
+
     .profile-name{
         min-height: 100px;
         justify-content: flex-start;
     }
-    .profile-info-wrapper{
-        justify-content: space-between;
-        flex-wrap: wrap;
-        min-width: 100%;
-    }
+  
     .profile-info-wrapper {
         height: 60px;
     }
