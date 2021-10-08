@@ -18,8 +18,8 @@
     <div class="wraper">
         <header class="header">
             <div class="title">devfinder</div>
-    
-            <div id="toggle-btn">
+
+            <div id="toggle-dark-mode" class="toggle-dark-mode">
                 <div id="toggle-text">DARK</div>
                 <div class="icon"><img id="icon" src="/images/icon-moon.svg" alt=" "></div>
             </div>
@@ -28,13 +28,7 @@
         <div class="search-form">
             <label id="form">
                 <div class="form-control">
-                    <input
-                    class="search"
-                    title="search"
-                    type="txt"
-                    id="search"
-                    placeholder="Search GitHub username…"
-                    />
+                    <input class="search" title="search" type="txt" id="search" placeholder="Search GitHub username…" />
                     <button class="form-button" id="submit">Search</button>
                     <div class="error">
                         <div id="no-results">No results</div>
@@ -43,59 +37,62 @@
             </label>
         </div>
 
-        <div class="content">
-            <div class="profile">
-              <img id="avatar" src="" alt="">
-                
-              <div class="prf-name"></div>
-
-              <div class="user"></div>
-
-              <div class="date"></div>
-
+        <div class="content" id="content">
+            <div class="avatar-box">
+                <img id="avatar" class="avatar" src="" alt="">
             </div>
 
-            <div class="bio"></div>
+            <div class="profile">
+                <div class="date-joined" id="date-joined"></div>
 
-            <div class="card">
+                <div class="name" id="name"></div>
+
+                <div class="username" id="username"></div>
+            </div>
+
+            <div class="bio content-box" id="bio"></div>
+
+            <div class="card content-box">
                 <div class="social-card">
 
                     <div class="social">
-                        <p class="repos"></p>
-                        <label id="repos">Repos</label>
+                        <label>Repos</label>
+                        <p id="repos" class="repos social-value"></p>
                     </div>
 
                     <div class="social">
-                        <p class="followers"></p>
-                        <label id="followers">Followers</label>
+                        <label>Followers</label>
+                        <p id="followers" class="followers social-value"></p>
                     </div>
 
                     <div class="social">
-                        <p class="following"></p>
-                        <label id="following">Following</label>
+                        <label>Following</label>
+                        <p id="following" class="following social-value"></p>
                     </div>
 
                 </div>
+            </div>
 
+            <div class="card content-box">
                 <div class="media-card">
-                    <div class="locations">
+                    <div class="card-item">
                         <label class="links"><img src="/images/icon-location.svg" alt=""></lebel>
-                        <p id="city"></p>
+                        <label id="city"></label>
                     </div>
 
-                    <div class="locations">
+                    <div class="card-item">
                         <label class="links"><img src="/images/icon-website.svg" alt=""></label>
-                        <p id="website"></p>
+                        <label id="website"></label>
                     </div>
 
-                    <div class="locations">
+                    <div class="card-item">
                         <label class="links"><img src="/images/icon-twitter.svg" alt=""></label>
-                        <p id="twitter"></p>
+                        <label id="twitter"></label>
                     </div>
 
-                    <div class="locations">
+                    <div class="card-item">
                         <label class="links"><img src="/images/icon-company.svg" alt=""></label>
-                        <p id="company"></p>
+                        <label id="company"></label>
                     </div>
 
                 </div>
@@ -103,8 +100,8 @@
             </div>
         </div>
     </div>
+    </div>
 
 </body>
 
 </html>
-
