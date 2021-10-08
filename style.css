@@ -335,7 +335,8 @@ body.dark-theme {
         padding: 33px 0 0 0 ;
         font-size: 13px;
         margin-top: 33px;
-        margin-left: 113px;
+        margin-left: 133px;
+        text-align: left;
     }
 
     .name {
@@ -350,12 +351,13 @@ body.dark-theme {
 
     .date-joined {
         order: 3;
+        text-align: left;
     }
 
     .content {
         padding-left: 24px;
         padding-right: 24px;
-        max-height: 517px;
+        
     }
 
     .content .avatar-box {
@@ -367,6 +369,28 @@ body.dark-theme {
         margin-top: 32px;
     }
 
+    .social {
+        font-size: 11px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .social-value {
+        font-size: 16px;
+    }
+
+    .content-box {
+        padding: 25px 0px 0 0;
+        overflow: hidden;
+    }
+
+    .media-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+  /*  .links label {
+        margin-left: 10px;
+    }
+*/
  }
-
-
