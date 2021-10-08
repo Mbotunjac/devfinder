@@ -389,8 +389,10 @@ body.dark-theme {
         flex-direction: column;
     }
 
-  /*  .links label {
-        margin-left: 10px;
+    .card-item label {
+        font-size: 13px;
+        line-height: 19.25px
     }
-*/
+
+ 
  }
